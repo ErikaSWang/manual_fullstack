@@ -25,24 +25,24 @@ A minimal full-stack application skeleton with React + Vite (frontend) and Expre
 ### Installation
 
 1. **Install server dependencies**:
-   ```bash
+   ```(in the terminal line)
    cd server
    npm install
    ```
 
 2. **Install client dependencies**:
-   ```bash
+   ```(in the terminal line)
    cd ../client
    npm install
    ```
 
 3. **Go back to root**:
-   ```bash
+   ```(in the terminal line)
    cd ..
    ```
 
 4. **Install root dependencies**:
-   ```bash
+   ```(in the terminal line)
    npm install
    ```
 
@@ -50,7 +50,7 @@ A minimal full-stack application skeleton with React + Vite (frontend) and Expre
 
 Start both the backend and frontend with one command:
 
-```bash
+```(in the terminal line)
 npm run dev
 ```
 
@@ -66,12 +66,12 @@ This will:
 If you want to run them separately:
 
 **Backend only:**
-```bash
+```(in the terminal line)
 cd server && npm start
 ```
 
 **Frontend only (from root or client directory):**
-```bash
+```(in the terminal line)
 cd client && npm run dev
 ```
 
