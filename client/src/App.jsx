@@ -6,16 +6,19 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/hello')
-      .then(res => res.json())
-      .then(data => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('/api/hello')
+        const data = await res.json()
         setMessage(data.message)
         setLoading(false)
-      })
-      .catch(err => {
+      } catch (err) {
         console.error('Error:', err)
         setLoading(false)
-      })
+      }
+    }
+    
+    fetchData()
   }, [])
 
   return (
