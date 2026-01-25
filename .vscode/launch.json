@@ -5,10 +5,11 @@
       "name": "Run Full Stack App",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceFolder}\\node_modules\\.bin\\concurrently",
-      "runtimeArgs": ["\"npm run server\" \"npm run client\""],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }
