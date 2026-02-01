@@ -22,6 +22,7 @@
         "panel": "new"
       },
       "runOptions": {
+        "_comment": "This field will be ignored by the application",
         "runOn": "folderOpen"
       }
     }
