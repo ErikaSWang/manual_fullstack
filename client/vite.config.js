@@ -12,6 +12,7 @@ export default defineConfig({
         changeOrigin: true
       }
     },
-    allowedHosts: 'all'
+    allowedHosts: 'all',
+    allowedHosts: ['3d004aea-abb2-427b-a163-7776ac9407e7-00-2gfl6an6ztmvd.kirk.replit.dev', '3d004aea-abb2-427b-a163-7776ac9407e7-00-2gfl6an6ztmvd.kirk.replit.dev:3000/']
   }
 })
