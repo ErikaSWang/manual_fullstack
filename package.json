@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm install && npm run build",
     "server": "cd server && npm start",
     "client": "cd client && npm run dev",
     "production": "cd client && npm run build"
