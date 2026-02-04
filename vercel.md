@@ -9,13 +9,17 @@
 2. EITHER:
 
 a) server.js
-- guesss production versions need to 'build' the app (or the react part)?
-- need a 'public' or 'dist' folder, along with some extra packages to get it to work
-
-Then, on Vercel need to add:
-    - npm run build
-    - client/dist (public didn't work)
-    - npm install (this is for the root)
+- guess production versions need to 'build' the app (or the react part)?
+- NEED TO EITHER:
+    i. Point to the vite default build folder, which is client/dist, AND
+        Then, on Vercel need to add the following to override the vite default:
+            - npm run build (the default)
+            - client/dist (NOT the vercel default)
+            - npm install (this is the root version, also the default)
+    
+    ii. Point to the vercel default build folder, which is public, AND
+        Then in vite.config.js, add:
+            - the 'outDir' to override the vite default
 
 b) vercel.json
 - need to create a new file
