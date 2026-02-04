@@ -19,11 +19,11 @@ app.get('/api/hello', (req, res) => {
 
 // Serve static files from React build in production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/public')))
+  app.use(express.static(path.join(__dirname, '../public')))
 
   // Handle React routing - serve index.html for all non-API routes
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public/dist/index.html'))
+    res.sendFile(path.join(__dirname, '../public/index.html'))
   })
 }
 
